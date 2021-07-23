@@ -3,7 +3,7 @@ const MovieList = ({ movies, favouriteComponent, handleFavouriteClick }) => {
 
   return (
     <>
-      {movies.map((movie, index) => (
+      {movies.map((movie) => (
         <div className='image-container d-flex justify-content-start m-2 mb-4'>
           <img src={movie.Poster} alt='Movie' />
           <div 
