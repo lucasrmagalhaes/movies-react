@@ -36,7 +36,9 @@ function App() {
       localStorage.getItem('movies-favourites')
     );
 
-    setFavourites(movieFavourites);
+    if (movieFavourites) {
+      setFavourites(movieFavourites);
+    }
   }, [])
 
   const addFavouriteMovie = (movie) => {
