@@ -15,8 +15,8 @@
   
   <br />
 
-  [OMDB API](https://www.omdbapi.com/)
+  [OMDB API](https://www.omdbapi.com/) <br />
   [Bootstrap Icons](https://icons.getbootstrap.com/)
-
+  
   [React Movie App Tutorial](https://www.youtube.com/watch?v=jc9_Bqzy2YQ&t=1815s&ab_channel=ChrisBlakely)
 </details>
