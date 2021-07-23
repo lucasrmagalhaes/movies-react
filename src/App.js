@@ -31,6 +31,14 @@ function App() {
     getMovieRequest(searchValue);
   }, [searchValue])
 
+  useEffect(() => {
+    const movieFavourites = JSON.parse(
+      localStorage.getItem('movies-favourites')
+    );
+
+    setFavourites(movieFavourites);
+  }, [])
+
   const addFavouriteMovie = (movie) => {
     const newFavouriteList = [...favourites, movie];
     setFavourites(newFavouriteList);
