@@ -51,6 +51,7 @@ function App() {
     );
 
     setFavourites(newFavouriteList);
+    saveToLocalStorage(newFavouriteList);
   }
 
   const saveToLocalStorage = (items) => {
