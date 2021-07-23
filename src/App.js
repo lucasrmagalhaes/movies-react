@@ -34,6 +34,7 @@ function App() {
   const addFavouriteMovie = (movie) => {
     const newFavouriteList = [...favourites, movie];
     setFavourites(newFavouriteList);
+    saveToLocalStorage(newFavouriteList);
   }
 
   const removeFavouriteMovie = (movie) => {
@@ -42,6 +43,10 @@ function App() {
     );
 
     setFavourites(newFavouriteList);
+  }
+
+  const saveToLocalStorage = (items) => {
+    localStorage.setItem('movies-favourites', JSON.stringify(items))
   }
 
   return (
